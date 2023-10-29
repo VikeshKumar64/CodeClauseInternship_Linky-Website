@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linky</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="icon" type="image/x-icon" href="linky_img.png">
+</head>
+<body>
+    <div class="nav-bar">
+        <img src="linky_img.png" alt="logo" id="logo">
+    </div>
+    <main>
+        <div class="box">
+            <div class="info">
+                <img src="linky_img.png" alt="logo" id="logoInConainer">
+                <p>Our service helps you shorten long and complicated URLs into short, easy-to-share links.</p>
+            </div>
+            <div class="inputFields">
+                <div class="input-box">
+                    <input type="text" id="E_or_N" name="username"  class="input-field" required placeholder="Enter The Link Here">
+                    <button id="shortUrl_button">Shorten URL</button>
+                </div>
+            </div>
+            <div class="outputFields">
+                <div class="output-box">
+                    <input type="text" id="outPut" name="username" class="input-field" required placeholder="Shortened link will be Generated Here">
+                    <div class="material-symbols-outlined"><i class="fa-regular fa-clipboard"></i></div>
+                    <div id="copyMessage" class="copy-message">Copied!</div>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+    <footer> Developed By - &nbsp; Vikesh Kumar </footer>
+    <script src="script.js"></script>
+</body>
+</html>

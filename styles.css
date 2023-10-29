@@ -1,0 +1,695 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+
+.nav-bar {
+  height: 100px;
+  width: 100vw;
+  background: rgb(24, 222, 199);
+  background: linear-gradient(
+    90deg,
+    rgba(24, 222, 199, 1) 0%,
+    rgba(37, 163, 229, 1) 52%,
+    rgba(116, 252, 69, 1) 100%
+  );
+  display: flex;
+  justify-content: start;
+  gap: 88%;
+  align-items: center;
+  padding: 30px;
+}
+
+#logo {
+  height: 100px;
+  width: 100px;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  background-color: #f3f1f1;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+  margin: 60px;
+  transition: transform 0.3s ease;
+  height: 70vh;
+  width: 70vw;
+}
+
+.box:hover {
+  transform: translateY(-10px);
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 20px;
+  color: #4285f4;
+}
+
+.inputFields {
+  display: flex;
+  gap: 0px;
+  margin-left: 20px;
+  vertical-align: baseline;
+}
+
+#logoInConainer {
+  height: 15vh;
+  width: 10vw;
+}
+
+#E_or_N {
+  width: 55vw;
+  height: 70px;
+  padding: 12px 20px;
+  border-radius: 5px;
+  border: 1px solid #2c3e50;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 20px;
+}
+#E_or_N:focus {
+  border: none;
+  outline-color: #4285f4;
+  outline-style: solid;
+  outline-width: 3px;
+}
+
+#shortUrl_button {
+  height: 70px;
+  padding: 10px 16px;
+  border-radius: 3px;
+  border: none;
+  background: rgba(5, 115, 225, 1);
+  color: white;
+  font-size: 23px;
+  font: bold 20px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  cursor: pointer;
+}
+
+#shortUrl_button:hover {
+  background-color: rgb(2, 91, 179);
+}
+
+#shortUrl_button:active {
+  background-color: #1e90ff;
+}
+
+.outputFields {
+  display: flex;
+  gap: 0px;
+  margin-left: 20px;
+  vertical-align: baseline;
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+#outPut {
+  width: 30vw;
+  height: 70px;
+  padding: 12px 20px;
+  border-radius: 5px;
+  border: 1px solid #2c3e50;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 20px;
+}
+#outPut:focus {
+  border: none;
+  outline-color: #4285f4;
+  outline-style: solid;
+  outline-width: 3px;
+}
+
+.material-symbols-outlined {
+  font-size: 30px;
+  color: white;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+  height: 70px;
+  width: 60px;
+  padding: 20px 20px;
+  border-radius: 3px;
+  border: none;
+  background-color: rgba(5, 115, 225, 1);
+}
+
+.material-symbols-outlined:hover {
+  background-color: rgb(2, 91, 179);
+  color: #ffffff;
+}
+
+.material-symbols-outlined:active {
+  background-color: #1e90ff;
+}
+
+.copy-message {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #1e90ff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: none;
+}
+
+footer {
+  background-color: #000;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 20px;
+  position: fixed;
+  top: 96%;
+  bottom: 0;
+  width: 100%;
+}
+
+
+/*--------------------------------------------------------*/
+
+@media only screen and (min-width: 376px) and (max-width: 896px) {
+  
+  body {
+    height: 100vh;
+  }
+  .info p {
+    display: none;
+  }
+
+  .box {
+    margin: 0;
+    width: 100vw;
+  }
+  #logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  #logoInConainer {
+    width: 40vw;
+  }
+  .input-box {
+    height: 40px;
+    align-items: center;
+  }
+
+  #E_or_N,
+  #outPut {
+    width: 50vw;
+    height: 50px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding: 0 20px;
+  }
+
+  #shortUrl_button {
+    height: 50px;
+    font-size: 14px;
+    padding: 0 20px;
+  }
+
+  .material-symbols-outlined {
+    height: 50px;
+    width: auto;
+    padding: 10px 20px;
+    margin-left: 5px;
+    text-align: center;
+  }
+  .material-symbols-outlined i {
+    margin-bottom: 5px;
+  }
+
+  .output-box {
+    justify-content: start;
+    display: flex;
+  }
+  #outPut {
+    height: 50px;
+    font-size: 14px;
+    padding: 0 20px;
+  }
+
+  .outputFields {
+    height: auto;
+    margin-left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .copy-message {
+    font-size: 10px;
+    padding: 5px 10px;
+    height: 40px;
+  }
+
+  
+}
+
+/*----------------------------------------------------------------*/
+
+@media only screen and (min-width: 375px) and (max-width:667px) {
+  
+  body {
+    height: 100vh;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  }
+  
+  .info p {
+    display: none;
+  }
+
+  .box {
+    margin: 20px 0px ;
+    width: 100vw;
+  }
+
+  #logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  #logoInConainer {
+    width: 40vw;
+  }
+  .input-box {
+    height: 40px;
+    align-items: center;
+    margin-left: 20px;
+  }
+
+  #E_or_N,
+  #outPut {
+    width: 50vw;
+    height: 50px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding: 0 20px;
+  }
+
+  #shortUrl_button {
+    height: 50px;
+    font-size: 14px;
+    padding: 0 20px;
+  }
+
+  .material-symbols-outlined {
+    height: 50px;
+    width: auto;
+    padding: 10px 20px;
+    margin-left: 5px;
+    text-align: center;
+  }
+  .material-symbols-outlined i {
+    margin-bottom: 5px;
+  }
+
+  .output-box {
+    justify-content: start;
+    display: flex;
+  }
+  #outPut {
+    height: 50px;
+    font-size: 14px;
+    padding: 0 20px;
+  }
+
+  .outputFields {
+    height: auto;
+    margin-left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer {
+    background-color: #000;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 14px;
+    position: fixed;
+    top: 96%;
+    bottom: 0;
+    width: 100%;
+  }
+}
+
+/*----------------------------------------------------------*/
+
+@media only screen and (min-width: 360px) and (max-width:740px) {
+  body {
+    height: 100vh;
+  }
+  
+  .info p {
+    display: none;
+  }
+
+  .box {
+    margin: 50px 0px;
+    width: 100vw;
+  }
+  #logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  #logoInConainer {
+    width: 40vw;
+  }
+  .input-box {
+    height: 40px;
+    align-items: center;
+  }
+
+  #E_or_N,
+  #outPut {
+    width: 50vw;
+    height: 40px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding: 0 20px;
+  }
+
+  #shortUrl_button {
+    height: 40px;
+    font-size: 10px;
+    padding: 0 20px;
+    width: 100px;
+  }
+
+  .material-symbols-outlined {
+    height: 40px;
+    width: 40px;
+    padding: 5px 11px;
+    margin-left: 5px;
+    text-align: center;
+  }
+  .material-symbols-outlined i {
+    margin-right: 5px;
+  }
+
+  .output-box {
+    justify-content: start;
+    display: flex;
+  }
+  #outPut {
+    height: 40px;
+    font-size: 14px;
+    padding: 0 20px;
+  }
+
+  .outputFields {
+    height: auto;
+    margin-left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .copy-message {
+    font-size: 10px;
+    padding: 8px 10px;
+    height: 27px;
+  }
+
+  footer {
+    background-color: #000;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 14px;
+    position: fixed;
+    top: 92%;
+    bottom: 0;
+    width: 100%;
+  }
+}
+/*-------------------------------------------------------------*/
+
+@media only screen and (min-width: 414px) and (max-width:896px) {
+  .box {
+    margin: 20px 0px;
+    width: 100vw;
+    height: 500px;
+  }
+
+  footer {
+    background-color: #000;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 14px;
+    position: fixed;
+    top: 75%;
+    bottom: 0;
+    width: 100%;
+  }
+  
+}
+
+
+@media only screen and (min-width: 540px) and (max-width:720px) {
+  .input-box{
+    margin-left: 50px;
+  }
+
+  #E_or_N, #outPut {
+    width: 56vw;
+    height: 40px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding: 0 20px;
+  }
+
+  footer {
+    display: none;
+  }
+}
+/*-----------------------------------------------------------------*/
+
+
+@media only screen and (min-width: 390px) and (max-width:844px) {
+  .box {
+    margin: 40px 0px;
+    width: 100vw;
+    height: 500px;
+  }
+
+  footer {
+    background-color: #000;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 14px;
+    position: fixed;
+    top: 80%;
+    bottom: 0;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width:1180px) {
+  body {
+    height: 100vh;
+  }
+
+  .box {
+    margin: 50px 0px;
+    width: 100vw;
+    height: 500px;
+  }
+  #logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  #logoInConainer {
+    width: 30vw;
+  }
+  .input-box {
+    height: 40px;
+    align-items: center;
+  }
+
+  #E_or_N,
+  #outPut {
+    width: 50vw;
+    height: 40px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding: 0 20px;
+  }
+
+  #shortUrl_button {
+    height: 40px;
+    font-size: 10px;
+    padding: 0 20px;
+    width: 100px;
+  }
+
+  .material-symbols-outlined {
+    height: 40px;
+    width: 40px;
+    padding: 5px 11px;
+    margin-left: 5px;
+    text-align: center;
+  }
+  .material-symbols-outlined i {
+    margin-right: 5px;
+  }
+
+  .output-box {
+    justify-content: start;
+    display: flex;
+  }
+  #outPut {
+    height: 40px;
+    font-size: 14px;
+    padding: 0 20px;
+  }
+
+  .outputFields {
+    height: auto;
+    margin-left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .copy-message {
+    font-size: 10px;
+    padding: 5px 10px;
+    height: 40px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width:1024px) {
+  .inputFields {
+    display: flex;
+    gap: 0px;
+    margin-left: 140px;
+    vertical-align: baseline;
+  }
+
+  #outPut {
+  height: 40px;
+  font-size: 14px;
+  padding: 0 20px;
+  width: 300px;
+  }
+
+  #shortUrl_button {
+    height: 42px;
+    font-size: 13px;
+    padding: 0 6px;
+    width: 100px;
+  }
+
+  .info p{
+    display: block;
+  }
+
+  footer {
+    background-color: #000;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 14px;
+    position: fixed;
+    top: 66%;
+    bottom: 0;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 820px) and (max-width:1180px) {
+  .inputFields {
+    display: flex;
+    gap: 0px;
+    margin-left: 140px;
+    vertical-align: baseline;
+  }
+
+  #outPut {
+  height: 40px;
+  font-size: 14px;
+  padding: 0 20px;
+  width: 300px;
+  }
+
+  #shortUrl_button {
+    height: 42px;
+    font-size: 13px;
+    padding: 0 6px;
+    width: 100px;
+  }
+
+  .info p{
+    display: block;
+  }
+
+  footer {
+    background-color: #000;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 14px;
+    position: fixed;
+    top: 57%;
+    bottom: 0;
+    width: 100%;
+}
+}
+
+
+@media only screen and (min-width: 412px) and (max-width:914px) {
+  footer {
+    background-color: #000;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 14px;
+    position: fixed;
+    top: 74%;
+    bottom: 0;
+    width: 100%;
+}
+}
+
